@@ -16,7 +16,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: npm install, build
-        run: |
-          npm install
-          make install
+        run: make install
       - run: make lint
