@@ -13,7 +13,7 @@ const progressionGame = () => {
   }
   const correctAnswer = coll[itemPosition].toString();
   coll[itemPosition] = '..';
-  const question = `Question: ${coll}`;
+  const question = `Question: ${coll.join(' ')}`;
 
   return { description, question, correctAnswer };
 };
