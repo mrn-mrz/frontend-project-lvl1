@@ -12,10 +12,8 @@ const gcd = (num1, num2) => {
 
 const gcdGame = () => {
   const description = 'Find the greatest common divisor of given numbers.';
-  const min = 1;
-  const max = 50;
-  const number1 = getRandomInt(min, max);
-  const number2 = getRandomInt(min, max);
+  const number1 = getRandomInt();
+  const number2 = getRandomInt();
   const question = `Question: ${number1} ${number2}`;
   const correctAnswer = gcd(number1, number2);
 
